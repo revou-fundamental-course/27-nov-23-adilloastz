@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Katik - Kalkulator Matematik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="section-upper">
+        <h2 class="upper-title">Welcome To Katik</h2>
+        <p class="upper-description">
+          Hi sobat, selamat datang di Katik :] <br />
+          Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.
+        </p>
+        <nav class="main-menu">
+          <ul class="menu-list">
+            <li class="menu-item" id="link-luas">
+              <a href="#luas" class="menu-link">Luas Segitiga</a>
+            </li>
+            <li class="menu-item" id="link-keliling">
+              <a href="#keliling" class="menu-link">Keliling Segitiga</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <aside>
+        <div id="aside-luas">
+          <h2 class="aside-title">Luas Segitiga</h2>
+          <img src="segitiga-removebg-preview.png" alt="rectangle" class="aside-image" />
+
+          <div class="aside-content">
+            <span class="content-1">Rumus Luas Segitiga yaitu:</span>
+            <span class="content-2">L = 1/2 x a x t</span>
+            <span class="content-3">Di mana : </span>
+            <span class="content-4">L = Luas</span>
+            <span class="content-5">a = Panjang Alas</span>
+            <span class="content-6">t = tinggi</span>
+          </div>
+        </div>
+        <div id="aside-keliling">
+          <h2 class="aside-title">Keliling Segitiga</h2>
+          <img src="assets/rectangle.svg" alt="rectangle" class="aside-image" />
+
+          <div class="aside-content">
+            <span class="content-1">Rumus Keliling Segitiga yaitu:</span>
+            <span class="content-2">K = S1 + S2 + S3</span>
+            <span class="content-3">Di mana : </span>
+            <span class="content-4">K = Keliling</span>
+            <span class="content-5">S = Sisi A</span>
+            <span class="content-6">S = Sisi B</span>
+            <span class="content-7">S = Sisi C</span>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <div id="main-luas">
+          <h2 class="main-title">Hitung Luas Segitiga</h2>
+          <form class="input-form" id="form-luas">
+            <input type="number" id="input-alas" name="alas" placeholder="Nilai Alas" />
+            <input type="number" id="input-tinggi" name="tinggi" placeholder="Nilai Tinggi" />
+
+            <div class="result-luas">
+              <span class="result-rumus-luas">L = 1/2 x a x t</span>
+              <span class="result-input-luas">L = 1/2 x 20 x 60</span>
+              <span class="result-akhir-luas">L = 600</span>
+            </div>
+
+            <div class="button">
+              <button type="submit" class="button-hitung" id="hitungLuas">Hitung</button>
+              <button type="button" class="button-reset" id="resetLuas">Reset</button>
+            </div>
+          </form>
+        </div>
+
+        <div id="main-keliling">
+          <h2 class="main-title">Hitung Keliling Segitiga</h2>
+          <form class="input-form" id="form-keliling">
+            <input type="number" id="input-sisiA" name="sisi" placeholder="Sisi A" />
+            <input type="number" id="input-sisiB" name="sisi" placeholder="Sisi B" />
+            <input type="number" id="input-sisiC" name="sisi" placeholder="Sisi C" />
+            <div class="result-keliling">
+              <span class="result-rumus-keliling">K = S1 + S2 + S3</span>
+              <span class="result-input-keliling">K = 60 + 60 + 60</span>
+              <span class="result-akhir-keliling">K = 180</span>
+            </div>
+
+            <div class="button">
+              <button type="submit" class="button-hitung" id="hitungKeliling">Hitung</button>
+              <button type="button" class="button-reset" id="resetKeliling">Reset</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
